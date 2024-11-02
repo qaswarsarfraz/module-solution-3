@@ -1,0 +1,168 @@
+/* Set the background image for the whole container */
+body {
+    background-color: #fff0f5;
+    font-family: 'Arial', sans-serif;
+    color: #4a4a4a;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-image: url('background.jpg'); /* Background image for card */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+.message {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.message {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ff69b4; /* Pink color */
+    background: linear-gradient(45deg, red, #ff69b4, purple);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: inline-block;
+}
+
+.message:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+    filter: brightness(1.2); /* Adds a shiny effect */
+}
+.permanent-message {
+    font-size: 1.2em;
+    color: #ff69b4; /* Soft pink color */
+    margin-top: 10px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+    background: linear-gradient(45deg, #ff6b6b, #ff9ff3, #c56cf0); /* Gradient effect */
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: inline-block;
+}
+
+.permanent-message:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    filter: brightness(1.2); /* Adds shine */
+}
+
+
+.main-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.countdown {
+    font-size: 2em;
+    color: #ff69b4;
+    margin: 15px 0;
+}
+
+/* Styling for featured images */
+.featured-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.featured-images img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.featured-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Video Section */
+.video-section h2 {
+    color: #ff69b4;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Gallery */
+.gallery h2, .wish-board h2 {
+    color: #ff69b4;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.gallery-container img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+.wish-board {
+    margin-top: 30px;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ff69b4;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #ff82b6;
+}
+
+.confetti {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
